@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/dhruv"
+        app:civ_border_width="2dp"
+        android:layout_margin="9dp"
+        app:civ_border_color="#FF000000"/>
+
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/tvName"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="3"
+                android:text="Dhruv Gidwani" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize = "10sp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:text="5:15 PM"
+                android:textColor="#242424"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvMsg"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hii, how are you doing?" />
+    </LinearLayout>
+</LinearLayout>
